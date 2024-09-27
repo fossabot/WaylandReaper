@@ -10,9 +10,10 @@ The WaylandReaper script is created with the intention of providing a Wayland eq
 
 ### Note:
 Before using WaylandReaper, make sure to install the [Window Calls Extended](https://github.com/hseliger/window-calls-extended) extension that provides extended window information.
-## Prerequisites
+## Dependencies
 
-Ensure you have the [Window Calls Extended](https://github.com/hseliger/window-calls-extended) installed from here to enable extended window information.
+- [Window Calls Extended](https://github.com/hseliger/window-calls-extended)
+- `gnome-shell`  ≥ 45
 ## Installation
 
 To quickly download and install the script, run the following command in your terminal:
