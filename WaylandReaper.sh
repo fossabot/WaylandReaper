@@ -1,7 +1,17 @@
 #!/bin/bash
 
+# Define the whitelist of process names
+whitelist=(
+    guake
+    gnome-shell
+    # Add more process names to the whitelist as needed
+)
+
 # Get the PID of the active window
 active_window_pid=$(gdbus call --session --dest org.gnome.Shell --object-path /org/gnome/Shell/Extensions/WindowsExt --method org.gnome.Shell.Extensions.WindowsExt.FocusPID | awk -F"'" '{print $2}')
+
+# Get the process name associated with the PID
+process_name=$(ps -p "$active_window_pid" -o comm=)
 
 # Check if the PID is successfully obtained
 if [ -z "$active_window_pid" ]; then
@@ -9,5 +19,11 @@ if [ -z "$active_window_pid" ]; then
     exit 1
 fi
 
-# Forcefully terminate the process using kill -9
+# Check against the whitelist
+if [[ "${whitelist[@]}" =~ "$process_name" ]]; then
+    echo "Whitelisted process, ignoring"
+    exit 1
+fi
+
+# Force-kill the process
 kill -9 "$active_window_pid"
