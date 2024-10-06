@@ -21,7 +21,7 @@ fi
 
 # Check against the whitelist
 if [[ "${whitelist[@]}" =~ "$process_name" ]]; then
-    echo "Whitelisted process, ignoring"
+    echo "Whitelisted process: $process_name, ignoring"
     exit 1
 fi
 
