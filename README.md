@@ -19,7 +19,9 @@ Before using WaylandReaper, install the [Window Calls Extended](https://github.c
 
 To install the script, run this command in your terminal:
 
-`sudo sh -c "curl -o /usr/local/bin/WaylandReaper.sh https://raw.githubusercontent.com/NastyaGrifon/WaylandReaper/main/WaylandReaper.sh && chmod +x /usr/local/bin/WaylandReaper.sh"`
+```sh
+sudo sh -c "curl -o /usr/local/bin/WaylandReaper.sh https://raw.githubusercontent.com/NastyaGrifon/WaylandReaper/main/WaylandReaper.sh && chmod +x /usr/local/bin/WaylandReaper.sh"
+```
 
 ## Usage
 After installation, you can use WaylandReaper as a command or set up a shortcut for it.
