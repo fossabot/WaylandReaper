@@ -1,4 +1,6 @@
 # WaylandReaper
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnastyagrifon%2FWaylandReaper.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnastyagrifon%2FWaylandReaper?ref=badge_shield)
+
 ## Overview
 
 WaylandReaper is a script for GNOME desktops using Wayland. It lets users close the current window forcefully. It works with GNOME 45+.
@@ -41,3 +43,7 @@ Use this script carefully. Closing apps forcefully might lose unsaved work. The 
 WaylandReaper uses the [window-calls-extended](https://github.com/hseliger/window-calls-extended) Gnome Extension for window info.
 
 You can help improve the script or report issues on GitHub.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnastyagrifon%2FWaylandReaper.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnastyagrifon%2FWaylandReaper?ref=badge_large)
